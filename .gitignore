@@ -1,0 +1,10 @@
+*.pem
+*.key
+*.crt
+*.csr
+*.crl
+*.cer
+*.der
+*.pfx
+*dev*
+*.txt
