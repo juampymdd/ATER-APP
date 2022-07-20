@@ -8,3 +8,4 @@
 *.pfx
 *dev*
 *.txt
+/node_modules
