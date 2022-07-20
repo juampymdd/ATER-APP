@@ -1,6 +1,6 @@
-#API.ATER
+# API.ATER
 
-##Pre-requisitos:
+## Pre-requisitos:
 
 -	**Enlace de acceso**:
     En caso de que desee conectarse a nuestros servicios le proporcionaremos un enlace de acceso para darse de alta en los mismos.
@@ -23,7 +23,7 @@ Es una herramienta que se utilizara para:
     -   Podrá redistribuir dichos tokens con sus propios usuarios o hacer uso de ellos para consumir nuestros servicios y los datos siempre que se encuentre autorizado.
 
 ---
-##Pasos para la implementación:
+## Pasos para la implementación:
 
 **Paso 1:** Obtener certificado.
 1.	Ingresar por la URL que le proveerá la ATER
