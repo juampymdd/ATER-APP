@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 const { pfx} = require('./config');
 const https = require('https');
 const status = `El servidor se encuentra corriendo en el puerto ${port}`
@@ -11,7 +11,7 @@ app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
 app.use(routes)
-app.get('/', (req, res) => {
+app.get('/status', (req, res) => {
     res.send(status);
 })
 

@@ -4,7 +4,8 @@
   "description": "Cliente para consumir la API de la Administradora Tributaria de Entre Ríos.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --openssl-legacy-provider app.js"
   },
   "keywords": [
     "API-ATER",

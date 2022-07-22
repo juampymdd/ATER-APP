@@ -1,3 +1,5 @@
+
+
 # API.ATER
 
 ## Pre-requisitos:
@@ -83,4 +85,48 @@ public static string CrearHash(string frase)
                 'Content-Type': 'application/json',
                 'Authorization': token
             }
+```
+
+# Cliente APP
+
+- Copiar certificado y clave privada (en caso que sea necesario) al directorio /certs como se muestra en la estructura.
+
+```
+├── certs
+│   ├── client.crt
+│   ├── client.key
+│   └── client.pfx
+```
+- Editar el config.js
+
+>Ingresar el *client_id* obtenido al momento del registro y el *nombre de su certificado* **sin la extensión**. *El passphrase es la contraseña de su certificado en el caso que el mismo sea .pfx*.
+
+
+```
+ const config = {
+        client_id: '[CLIENT_ID]',
+        cert_name: '[NOMBRE DEL CERTIFICADO]',
+        passphrase: '[PASSWORD DEL CERTIFICADO]'
+    };
+```
+
+- Instalar las dependencias:
+
+```
+npm install
+```
+- Iniciar el servidor:
+
+```
+npm start
+```
+- Verificar que el servidor esté funcionando:
+
+```
+curl -k GET https://localhost:5000/status
+```
+- Verificar si se puede obtener un token a través del certificado:
+
+```
+curl -k GET https://localhost:5000/api/token
 ```
